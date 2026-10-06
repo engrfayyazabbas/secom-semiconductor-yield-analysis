@@ -1,0 +1,15 @@
+SECOM DATASET EXPLORATORY DATA ANALYSIS REPORT
+==================================================
+
+1. Total Wafers / Samples: 1,567
+2. Total Raw Features: 590
+3. Class Balance:
+   - Pass (-1): 1,463 (93.36%)
+   - Fail (+1): 104 (6.64%)
+   - Imbalance Ratio: 14.07:1
+
+4. Missing Data:
+   - Total Missing Cells: 41,951 (4.54%)
+   - Features with >50% missing (recommend drop): 28
+5. Zero-Variance / Constant Features: 116 features
+6. Usable Features after basic filtering: 446
