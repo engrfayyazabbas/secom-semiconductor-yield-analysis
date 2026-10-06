@@ -2,7 +2,7 @@
 **A Systematic Diagnostic & Statistical Quality Assessment for Semiconductor Yield Modeling**
 
 **Prepared for**: Academic Project Review / Research Advisor  
-**Project**: NILOP Semiconductor Process Modeling & Defect Classification  
+**Project**:Semiconductor Process Modeling & Defect Classification  
 **Date**: October 2026  
 
 ---
@@ -44,7 +44,7 @@ Class Imbalance Ratio: ~14.07 : 1 (Pass : Fail)
 
 ![Class Distribution](plots/eda_class_distribution.png)
 
-### Key Academic Insights for the Professor:
+### Key Academic Insights:
 1. **The "Accuracy Paradox"**:
    - A naive model predicting every wafer will pass achieves **93.36% raw accuracy**, yet catches **0% of defects**.
    - In wafer fabrication, letting a defective wafer pass through to packaging and shipping costs orders of magnitude more than reinspecting a flagged wafer.
@@ -162,12 +162,4 @@ After rigorous EDA-guided hygiene, the active feature matrix is transformed as f
 
 ---
 
-## 8. Summary for Academic Advisor
 
-When presenting this EDA to your professor:
-1. **Highlight Data Quality Discipline**: Show that before jumping blindly into model training, you audited and cleaned the telemetry, removing **116 non-informative constant sensors** and **28 unreliable sparse probes**.
-2. **Present the Empirical Reality**: Explain why the **14.1 : 1 class imbalance** and **temporal excursion clustering** dictate that specialized cost-sensitive algorithms must be used.
-3. **Point to Reproducible Artifacts**:
-   - The analysis script: [`eda_analysis.py`](eda_analysis.py)
-   - The full feature ranking: [`feature_ranking.py`](feature_ranking.py) & [`top_features_ranked.csv`](top_features_ranked.csv)
-   - Visual plots directory: [`plots/`](plots/)

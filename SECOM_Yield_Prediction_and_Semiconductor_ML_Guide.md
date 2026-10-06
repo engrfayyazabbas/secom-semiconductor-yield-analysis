@@ -144,8 +144,6 @@ When presenting to academic supervisors, report:
 
 ## 5. Strategic Pathways for Your Research Project
 
-If your professor evaluates your research design, here are three clearly defined academic pathways you can propose:
-
 ```
                             RESEARCH PATHWAYS DECISION TREE
                                            │
@@ -189,8 +187,6 @@ If your professor evaluates your research design, here are three clearly defined
     - Photolithography: Exposure dose ($mJ/cm^2$), Defocus ($\mu m$).
   - The simulator computes device physics outcomes (Threshold voltage $V_{th}$, Breakdown voltage $V_{br}$, Leakage current $I_{off}$).
   - Train an ML surrogate model (e.g., Polynomial Regression, Gaussian Process, Neural Network) to predict whether the device meets electrical specs.
-* **Suitability**: Ideal if your professor wants direct correlation between physics textbook parameters and device performance.
-
 ### Pathway 3: Semiconductor Datasets With Named Physical Parameters
 If you want empirical fab data with explicit parameter names:
 1. **Chemical Mechanical Planarization (CMP) Dataset**:
@@ -206,8 +202,6 @@ If you want empirical fab data with explicit parameter names:
 
 ## 6. Concrete Recommendations for Your Project
 
-### What to Present to Your Professor
-
 1. **Demonstrate Working Code & Concrete Results**:
    Show that you have already built an automated pipeline, performed data hygiene, resolved 116 dead sensors, and extracted the top consensus failure drivers:
    - Point to [`eda_analysis.py`](file:///D:/OneDrive%20-%20Higher%20Education%20Commission/Semiconductor%20Fundamentals/Semicondutor%20Fundamentals/NILOP%20Project/Data/eda_analysis.py) and [`feature_ranking.py`](file:///D:/OneDrive%20-%20Higher%20Education%20Commission/Semiconductor%20Fundamentals/Semicondutor%20Fundamentals/NILOP%20Project/Data/feature_ranking.py).
@@ -215,7 +209,7 @@ If you want empirical fab data with explicit parameter names:
    - Present the published repository: [**engrfayyazabbas/secom-semiconductor-yield-analysis**](https://github.com/engrfayyazabbas/secom-semiconductor-yield-analysis).
 
 2. **Frame the Research Value Correctly**:
-   Clarify to your professor:
+
    > *"While the feature names are masked to protect commercial fab trade secrets, the numerical distributions reflect genuine manufacturing sensor dynamics. We can successfully build an end-to-end Virtual Metrology and Fault Detection classifier to predict Pass/Fail yield with >80% defect recall. If our research milestone requires manual entry of named physical parameters like spin speed and temperature, we can augment this project with a TCAD process simulator surrogate model."*
 
 3. **Suggested Next Milestone**:
